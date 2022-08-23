@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+</head>
+<body class="w3-theme-l5 w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-theme w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="img/profile.jpg" style="width:45%;" onclick="onClick(this)" class="w3-circle w3-hover-opacity"><br><br>
+            <h4><b>UMKM PULO PANJANG 1</b></h4>
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <img class="w3-modal-content w3-display-middle w3-large" id="img01" style="width:50%">
+            </div>
+            <script>
+                function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                }
+            </script>
+            
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-blue"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>PRODUCT</a>
+            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+        <div class="w3-panel w3-large">
+            <a href="https://www.instagram.com/kkm50pulopanjang1/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UCjPw-teCpitZ9kzp-5RBszg"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+        </div>
+    </nav>
+    <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+    <!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:300px">
+		<!-- Header -->
+        <header id="commerce">
+            <a href="#"><img src="img/profile.jpg" style="width:65px;"
+                    class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>CONTACT</b></h1>
+                <div class="w3-section w3-bottombar w3-padding-10">
+                </div>
+                <p>IBU SUMYATI = 0878-7158-1710</p>
+               <!--  <p>Thanks to <a href="https://www.webhozz.com/blog/belajar-web-design-membuat-website-portfolio/" target='_blank'>Webhozz</a> & <a href="https://www.w3schools.com/" target='_blank'>W3Schools</a></p> -->
+                <p>&copy; KKM-Pkm Kelompok 50 Kp. Peres Desa Pulo Panjang 1</p>
+            </div>
+        </header>
+       <div>
+	</div>
+</div>
+</body>
+</html>
